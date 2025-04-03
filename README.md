@@ -4,6 +4,7 @@ A React application that allows users to interact with the Solana blockchain by 
 
 Checkout the live project:
 - [Live Link](https://solana-token-manager-gamma.vercel.app/)
+- [Video Demo](https://drive.google.com/drive/folders/1_aVbnAJatOuD7kTfgVGzkOgdaxtMq6gX?usp=sharing)
 
 ## Features
 
