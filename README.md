@@ -2,6 +2,9 @@
 
 A React application that allows users to interact with the Solana blockchain by creating, minting, and sending SPL tokens on the Solana devnet.
 
+Checkout the live project:
+- [Live Link](https://solana-token-manager-gamma.vercel.app/)
+
 ## Features
 
 - **Wallet Integration**: Connect with Phantom, Solflare, or other Solana wallets
