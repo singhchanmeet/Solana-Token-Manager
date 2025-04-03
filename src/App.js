@@ -58,14 +58,14 @@ function App() {
         <WalletModalProvider>
           <div className="app">
             <header className="app-header">
-              <h1>Solana Token Creator</h1>
+              <h1>Solana Token Manager</h1>
               <WalletMultiButton />
             </header>
             <div className="app-content">
               <SolanaApp />
             </div>
             <footer className="app-footer">
-              <p>Solana Token Creator - Devnet</p>
+              <p>Solana Token Manager - Devnet</p>
             </footer>
           </div>
         </WalletModalProvider>
