@@ -1,0 +1,49 @@
+.token-sender {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: height 0.3s ease;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .expanded .card-header {
+    border-bottom-color: #eee;
+  }
+  
+  .card-header h3 {
+    font-size: 1.25rem;
+    color: #512da8;
+    margin: 0;
+  }
+  
+  .toggle-icon {
+    font-size: 1.5rem;
+    color: #7c4dff;
+  }
+  
+  .send-form {
+    padding: 1.5rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+  }
+  
+  .send-button {
+    background-color: #3f51b5;
+  }
+  
+  .send-button:hover {
+    background-color: #303f9f;
+  }

@@ -1,0 +1,226 @@
+.transaction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.75rem;
+  }
+  
+  .transaction-header h2 {
+    font-size: 1.5rem;
+    color: #512da8;
+    margin-bottom: 0;
+  }
+  
+  .transaction-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .refresh-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .refresh-button:hover {
+    background-color: #43a047;
+  }
+  
+  .refresh-button:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+  }
+  
+  .loading-transactions {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+  }
+  
+  .transactions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .transactions-table-container {
+    overflow-x: auto;
+  }
+  
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
+  
+  .transactions-table th {
+    background-color: #f5f7fa;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .transactions-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+  }
+  
+  .transaction-row {
+    transition: background-color 0.2s;
+  }
+  
+  .transaction-row:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .transaction-type {
+    font-weight: 600;
+  }
+  
+  .transaction-details {
+    color: #555;
+    word-break: break-word;
+    max-width: 300px;
+  }
+  
+  .transaction-time {
+    color: #777;
+    white-space: nowrap;
+  }
+  
+  .transaction-status {
+    font-weight: 500;
+  }
+  
+  .transaction-row.success .transaction-status {
+    color: #00c853;
+  }
+  
+  .transaction-row.pending .transaction-status {
+    color: #ff9800;
+  }
+  
+  .transaction-row.failed .transaction-status {
+    color: #f44336;
+  }
+  
+  .explorer-button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .explorer-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .no-transactions {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    margin-top: 1rem;
+  }
+  
+  /* Pagination Styles */
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid #eee;
+  }
+  
+  .pagination-button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #e0e0e0;
+  }
+  
+  .pagination-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination-pages {
+    display: flex;
+    gap: 0.25rem;
+  }
+  
+  .pagination-page-button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    min-width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .pagination-page-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .pagination-page-button.active {
+    background-color: #512da8;
+    color: white;
+  }
+  
+  .pagination-info {
+    text-align: center;
+    color: #666;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .transaction-details {
+      max-width: 150px;
+    }
+    
+    .transactions-table td, .transactions-table th {
+      padding: 0.75rem 0.5rem;
+    }
+    
+    .pagination {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    
+    .pagination-pages {
+      order: -1;
+    }
+  }

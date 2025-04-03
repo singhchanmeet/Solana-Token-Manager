@@ -1,0 +1,89 @@
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    width: calc(100% - 40px);
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    animation: slideIn 0.3s ease-out;
+    backdrop-filter: blur(10px);
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .notification.success {
+    background-color: rgba(76, 175, 80, 0.95);
+    color: white;
+  }
+  
+  .notification.error {
+    background-color: rgba(244, 67, 54, 0.95);
+    color: white;
+  }
+  
+  .notification.info {
+    background-color: rgba(33, 150, 243, 0.95);
+    color: white;
+  }
+  
+  .notification-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+  }
+  
+  .notification-icon {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .notification-message {
+    font-size: 0.9375rem;
+    line-height: 1.4;
+  }
+  
+  .notification-close {
+    background: transparent;
+    color: currentColor;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.25rem;
+    margin-left: 0.5rem;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  
+  .notification-close:hover {
+    opacity: 1;
+    background: transparent;
+  }
+  
+  @media (max-width: 768px) {
+    .notification {
+      top: 10px;
+      right: 10px;
+      width: calc(100% - 20px);
+      padding: 0.75rem;
+    }
+  }
